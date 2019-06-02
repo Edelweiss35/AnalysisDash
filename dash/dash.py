@@ -37,31 +37,7 @@ from ._utils import get_asset_path as _get_asset_path
 from ._utils import create_callback_id as _create_callback_id
 from . import _configs
 
-_default_index = '''<!DOCTYPE html>
-<html>
-    <head>
-        {%metas%}
-        <title>{%title%}</title>
-        {%favicon%}
-        {%css%}
-    </head>
-    <body>
-        {%app_entry%}
-        <footer>
-            {%config%}
-            {%scripts%}
-            {%renderer%}
-        </footer>
-    </body>
-</html>'''
 
-_app_entry = '''
-<div id="react-entry-point">
-    <div class="_dash-loading">
-        Loading...
-    </div>
-</div>
-'''
 
 _re_index_entry = re.compile(r'{%app_entry%}')
 _re_index_config = re.compile(r'{%config%}')
