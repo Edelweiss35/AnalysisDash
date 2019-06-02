@@ -63,16 +63,6 @@ _app_entry = '''
 </div>
 '''
 
-_re_index_entry = re.compile(r'{%app_entry%}')
-_re_index_config = re.compile(r'{%config%}')
-_re_index_scripts = re.compile(r'{%scripts%}')
-_re_renderer_scripts = re.compile(r'{%renderer%}')
-
-_re_index_entry_id = re.compile(r'id="react-entry-point"')
-_re_index_config_id = re.compile(r'id="_dash-config"')
-_re_index_scripts_id = re.compile(r'src=".*dash[-_]renderer.*"')
-_re_renderer_scripts_id = re.compile(r'id="_dash-renderer')
-
 
 # pylint: disable=too-many-instance-attributes
 # pylint: disable=too-many-arguments, too-many-locals
