@@ -1,16 +1,6 @@
 from __future__ import print_function
 from collections import OrderedDict
 
-import json
-import sys
-import subprocess
-import shlex
-import os
-import argparse
-import shutil
-import functools
-
-import pkg_resources
 
 from ._r_components_generation import write_class_file
 from ._r_components_generation import generate_exports
